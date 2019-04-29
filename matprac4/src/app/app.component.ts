@@ -1,4 +1,12 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+// import {FormControl} from '@angular/forms';
+// import {Observable} from 'rxjs';
+// import {map, startWith} from 'rxjs/operators';
+import { MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatAutocompleteModule } from '@angular/material';
+import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +15,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'matprac4';
+
+
 }

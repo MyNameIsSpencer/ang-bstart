@@ -3,14 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html',
-
-  template: `
-    <mat-toolbar color="primary">
-      Structuring stuff with Angular Material
-    </mat-toolbar>
-  `,
-
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {

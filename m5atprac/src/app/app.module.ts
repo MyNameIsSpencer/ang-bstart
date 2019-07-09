@@ -6,10 +6,13 @@ import { AppMaterialModule } from './app-material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PracstylescssstuffComponent } from './pracstylescssstuff/pracstylescssstuff.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PracstylescssstuffComponent,
+
   ],
   imports: [
     BrowserModule,

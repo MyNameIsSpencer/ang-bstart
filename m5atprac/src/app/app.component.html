@@ -1,14 +1,25 @@
+<!-- position="end" -->
+
 <mat-sidenav-container>
-  <mat-sidenav #sidenav></mat-sidenav>
+  <mat-sidenav #sidenav
+                mode="push"
+                ></mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button mat-button (click)="sidenav.toggle">
+      <button mat-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
       Egghead Material
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+
+<br>
+<br>
+<br>
+
+
 
 
 <mat-toolbar color="primary">

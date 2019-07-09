@@ -1,4 +1,3 @@
-// import { Component, HostListener } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'm5atprac';
+  title = 'mat6-ng';
+
 }

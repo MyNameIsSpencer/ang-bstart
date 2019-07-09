@@ -3,17 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "m5atprac": {
+    "mat6-ng": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/m5atprac",
+            "outputPath": "dist/mat6-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "m5atprac:build"
+            "browserTarget": "mat6-ng:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "m5atprac:build:production"
+              "browserTarget": "mat6-ng:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "m5atprac:build"
+            "browserTarget": "mat6-ng:build"
           }
         },
         "test": {
@@ -80,7 +84,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -103,7 +107,7 @@
         }
       }
     },
-    "m5atprac-e2e": {
+    "mat6-ng-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "m5atprac:serve"
+            "devServerTarget": "mat6-ng:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "m5atprac:serve:production"
+              "devServerTarget": "mat6-ng:serve:production"
             }
           }
         },
@@ -132,10 +136,5 @@
       }
     }
   },
-  "defaultProject": "m5atprac",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+  "defaultProject": "mat6-ng"
 }

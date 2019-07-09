@@ -1,0 +1,25 @@
+
+<mat-toolbar color="accent"
+             class="primary-toolbar"
+             [class.mat-elevation-z2]="applyShadow">
+  <span *ngIf="popText">  Egghead.io Toolbeer</span>
+</mat-toolbar>
+<mat-toolbar color="accent" class="primary-toolbar">
+  <span *ngIf="!popText">Material Toolvars</span>
+</mat-toolbar>
+
+
+<div class="lesson-content">
+  <h2>Toolbar Colors</h2>
+  <mat-toolbar>Basic Toolbar</mat-toolbar>
+  <mat-toolbar color="primary">Primary</mat-toolbar>
+  <mat-toolbar color="accent">Accent</mat-toolbar>
+  <mat-toolbar color="warn">Warn</mat-toolbar>
+
+  <h2>Toolbar Rows</h2>
+  <mat-toolbar color="primary">  <!-- color for mat-toolbar parent will affect children -->
+    <mat-toolbar-row>Row 1</mat-toolbar-row>
+    <mat-toolbar-row>Row 2</mat-toolbar-row>
+    <mat-toolbar-row>Row 3</mat-toolbar-row>
+  </mat-toolbar>
+</div>
